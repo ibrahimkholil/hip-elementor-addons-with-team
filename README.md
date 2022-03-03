@@ -1,0 +1,2 @@
+﻿The map widget was copied from Premium Addons for Elementor and extended to meet our needs.
+CSS and JSS were minified with the following npm command: minify path/to/unminified/file > path/to/minified/file

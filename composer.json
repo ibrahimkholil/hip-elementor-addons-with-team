@@ -1,0 +1,9 @@
+{
+    "name": "hipdevteam/hip-elementor-addons",
+    "description": "Grab bag of Elementor controls and widgets",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "composer/installers": ">=1.0"
+    }
+}

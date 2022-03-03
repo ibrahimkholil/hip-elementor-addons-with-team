@@ -1,0 +1,32 @@
+<?php
+
+while ( $loop->have_posts() ) : $loop->the_post();
+
+	?>
+	<div class="hip-team-member-container with-picture-and-bio-layout">
+		<div class="hip-team-member-box">
+			<div class="hip-team-box__layer hip-team-box__front">
+				<?php $this->render_post_thumbnails(); ?>
+
+				<div class="team-name-designation">
+					<div class="team-name">
+					  <?php $this->render_team_name();?>
+					</div>
+					<div class="team-designation">
+					  <?php $this->render_team_designation();?>
+					</div>
+					<?php $this->render_team_bio();?>
+				</div>
+
+			</div>
+			<div class="hip-team-box__layer hip-team-box__back">
+				<?php  $this->render_team_back_bio();?>
+			</div>
+
+		</div>
+
+	</div>
+
+<?php endwhile;
+
+wp_reset_postdata();
